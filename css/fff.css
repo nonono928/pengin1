@@ -1,15 +1,24 @@
 .image-grid {
     display: flex;
     justify-content: space-between;
-    gap: 10px; /* Space between images */
+    gap: 16px; /* Space between images */
     padding: 0 20px; /* Adds padding to the left and right edges of the container */
+    align-items: center;
 }
 
 .image-grid img {
-    width: 23%; /* Keeps the image size proportional */
+    width: 48%; /* Keeps the image size proportional: two images side-by-side */
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+}
+/* main result images */
+.intro-img{
+    max-width: 700px;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 12px auto;
 }
 .ai-prompt {
     display: flex;
@@ -32,11 +41,13 @@ img.icon {
   }
 
 img.end-image{
-    width: 60%; /* 画像を列にフィットさせる */
-    height: 50%; /* 画像を行にフィットさせる */
+    display: block;
+    max-width: 900px;
+    width: 85%; /* 画像を列にフィットさせる */
+    height: auto; /* 自動高さで比率を維持 */
     object-fit: cover; /* 画像の切り抜き方法を設定 */
     object-position: center; /* 画像の中央を表示 */
-    padding: 0px 100px;
+    margin: 12px auto;
 }
 .end-img{
     background-color: white;
@@ -108,7 +119,8 @@ footer a:hover{
 }
 
 
- {
+/* reset */
+* {
     padding: 0;
     margin: 0;
 }
@@ -265,7 +277,7 @@ footer {
 
     .Kekka {
         display: block;
-        width: 150%;
+        width: auto;
     }
 
 }
